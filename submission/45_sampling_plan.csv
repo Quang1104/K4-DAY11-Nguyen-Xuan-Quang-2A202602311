@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,30,medium,"Đủ điều kiện chiếu sáng và đường rõ để có baseline, lấy phân tán theo thời gian"
+front,hard,25,high,"Ngược sáng, xe ngược chiều, che khuất hoặc sát biên kính"
+rear,normal,25,medium,"Cảnh lùi xe bình thường, phân tán theo vị trí và thời điểm"
+rear,hard,25,high,"Vật gần xe, thiếu sáng, cột/mép vỉa và che khuất khi lùi"
+left,normal,20,medium,"Bao phủ cảnh bên trái bình thường, không lấy chuỗi frame liên tiếp"
+left,hard,30,high,"Ưu tiên seam góc xe, người đi bộ/xe máy nhỏ và méo fisheye sát biên"
+right,normal,20,medium,"Bao phủ cảnh bên phải bình thường, đa dạng bối cảnh"
+right,hard,25,high,"Ưu tiên seam, vật cắt biên, xe đỗ sát và biến dạng fisheye"

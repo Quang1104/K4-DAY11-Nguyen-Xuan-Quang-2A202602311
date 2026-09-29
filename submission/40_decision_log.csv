@@ -1,1 +1,5 @@
 id,date,question,decision,rationale,status
+D01,2026-09-29,"adasind_060000 R6+M8 và R10+M5 có phải thêm Pedestrian không?","Bổ sung hai box Pedestrian trong rework","Reference và model cùng thấy object; đối chiếu ảnh gốc cho thấy learner bỏ sót. Đây là E1/P1 theo R01.",reworked
+D02,2026-09-29,"adasind_086220 L4/R5 là Car hay ThreeWheeler?","Đổi theo ThreeWheeler khi hình dạng auto-rickshaw được nhận diện","Box L/R có IoU cao và R04 ánh xạ auto-rickshaw sang ThreeWheeler; không dùng prediction đơn lẻ.",reworked
+D03,2026-09-29,"adasind_102750 các phương tiện L2 và L5 cần xử lý thế nào?","Sửa các class có evidence R04 và giữ delta sau rework","Đối chiếu ảnh gốc với R/M cho thấy nhầm Bus/ThreeWheeler/Truck; các thay đổi được lưu trong annotations-v2.xml.",reworked
+D04,2026-09-29,"adasind_102750 L1+M3 khác reference về Car và ThreeWheeler thì quyết định gì?","Không tự sửa; chuyển QA phân xử","L và model cùng thấy Car nhưng reference gọi ThreeWheeler; chưa đủ evidence độc lập để kết luận E0 hay E1. Finding được ghi E5_unresolved/action=escalate.",escalated
